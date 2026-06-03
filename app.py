@@ -16,10 +16,6 @@ OPENWEATHER_API_KEY = os.getenv('OPENWEATHER_API_KEY')
 OPENWEATHER_BASE_URL = 'https://api.openweathermap.org/data/2.5'
 REQUEST_TIMEOUT = 10
 
-# Validación de API Key
-if not OPENWEATHER_API_KEY:
-    raise ValueError("OPENWEATHER_API_KEY no está configurada en .env")
-
 
 def validate_api_key(f):
     """Decorador para validar la API key"""
